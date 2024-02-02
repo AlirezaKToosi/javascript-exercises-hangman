@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <div id="hangman-container">
+      <object id="hangman-svg" data="hangman.svg" type="image/svg+xml"></object>
+      <div id="word-display"></div>
+      <div id="used-letters"></div>
+      <input type="text" id="letter-input" maxlength="1" placeholder="Enter a letter">
+      <button onclick="guessLetter()">Guess</button>
+      <button onclick="startGame()">New Game</button>
+  </div>
     <script src="index.js"></script>
   </body>
 </html>
